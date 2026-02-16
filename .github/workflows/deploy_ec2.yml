@@ -28,7 +28,7 @@ jobs:
         source: "templates,assets,main"
         target: /home/${{ secrets.EC2_USERNAME }}
 
-    - name: Restart service
+    - name: Restart do service
       uses: appleboy/ssh-action@v1.0.3
       with:
         host: ${{ secrets.EC2_HOST }}
